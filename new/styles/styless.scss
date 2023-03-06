@@ -1,0 +1,36 @@
+.header {
+  border: 2px solid red;
+}
+
+.nav {
+  border: 5px solid green;
+  padding: 5px;
+  margin: 10px;
+}
+
+.main {
+  border: 5px solid lightskyblue;
+  margin-top: 5px;
+}
+
+.section {
+  border: 5px dashed yellow;
+  padding: 5px;
+  margin: 10px;
+}
+
+.footer {
+  border: 5px solid green;
+  margin: 1px;
+  padding: 5px;
+}
+i {
+  display: block;
+}
+body {
+  display: flex;
+  align-content: center;
+}
+.algebra {
+  max-width: 100px;
+}
