@@ -1,5 +1,6 @@
 .header {
   border: 2px solid red;
+  width: 1000px;
 }
 
 .nav {
@@ -11,26 +12,31 @@
 .main {
   border: 5px solid lightskyblue;
   margin-top: 5px;
+  width: 1000px;
 }
 
 .section {
   border: 5px dashed yellow;
   padding: 5px;
   margin: 10px;
+  max-width: 100%;
 }
 
 .footer {
   border: 5px solid green;
-  margin: 1px;
-  padding: 5px;
+ margin-top: 5px;
+  width: 1000px;
 }
+
 i {
   display: block;
 }
-body {
-  display: flex;
-  align-content: center;
-}
+
 .algebra {
   max-width: 100px;
+}
+.sve{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

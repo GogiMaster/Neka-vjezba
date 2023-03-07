@@ -1,5 +1,6 @@
 .header {
   border: 2px solid red;
+  width: 50px;
 }
 
 .nav {
@@ -29,15 +30,6 @@ i {
   display: block;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
 .algebra {
   max-width: 100px;
 }
-/*# sourceMappingURL=styless.css.map */
