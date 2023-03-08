@@ -1,0 +1,71 @@
+.sivi {
+  background-color: #e6e0d9;
+  height: 500px;
+  border: 1px solid blanchedalmond;
+}
+
+.naslov {
+  color: #0ebbd0;
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+
+.plavi {
+  background-color: #0ebbd0;
+  border: 1px solid #0ebbd0;
+  height: 300px;
+  text-align: center;
+  color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.crni {
+  border: 1px solid #333030;
+  background-color: #333030;
+  height: 163px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.crni > p > u {
+  color: #b8cdf0;
+}
+
+.crni > p {
+  color: antiquewhite;
+}
+
+.kutije {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.box {
+  border: 1px solid white;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.slika {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #0ebbd0;
+  border-radius: 100px;
+  margin-top: -300px;
+}
+body {
+  margin: 0%;
+}
