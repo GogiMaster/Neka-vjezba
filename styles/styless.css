@@ -19,12 +19,12 @@
   border: 5px dashed yellow;
   padding: 5px;
   margin: 10px;
-  max-width: 100%;
 }
 
 .footer {
   border: 5px solid green;
- margin-top: 5px;
+  margin: 1px;
+  padding: 5px;
   width: 1000px;
 }
 
@@ -35,8 +35,9 @@ i {
 .algebra {
   max-width: 100px;
 }
-.sve{
+body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
