@@ -10,16 +10,23 @@
   <body>
     <header class="header">
       <img src="./Photos/logo.png" class="header__logo" />
-      <div class="opa">
+      <div class="o_meni">
         <div class="header__action">O MENI</div>
       </div>
     </header>
     <main class="layout">
       <nav class="nav">
-        <a class="nav__link" href="/">Home</a>
-        <a class="nav__link" href="/">Profil</a>
-        <a class="nav__link" class="pages">Vježba</a>
+        <button class="nav__link" href="/">Home</button>
+        <button class="nav__link" href="/">Profil</button>
+        <button class="nav__link" class="last__child" id="vjezbe" onclick="show_hide()">Vježbe</button>
+        <ul id='hiden_pages'>
+          <li id='hiden_pages__link'><a id='hiden_pages__link__a' href="./Tablice/tablice.html">Tablice1303</a></li>
+          <li id='hiden_pages__link'><a id='hiden_pages__link__a' href="/">Page 2</a></li>
+          <li id='hiden_pages__link'><a id='hiden_pages__link__a' href="/">Page 3</a></li>
+          <li id='hiden_pages__link'><a id='hiden_pages__link__a' href="/">Page 4</a></li>
+        </ul>  
       </nav>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
