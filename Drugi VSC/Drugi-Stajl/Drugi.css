@@ -1,7 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .sivi {
   background-color: #e6e0d9;
+  border: 1px solid #e6e0d9;
   height: 500px;
-  border: 1px solid blanchedalmond;
+  position: relative;
 }
 
 .naslov {
@@ -9,6 +15,12 @@
   font-size: 80px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  .naslov {
+    font-size: 50px;
+  }
 }
 
 .plavi {
@@ -24,7 +36,7 @@
 .crni {
   border: 1px solid #333030;
   background-color: #333030;
-  height: 163px;
+  height: 145px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,43 +50,115 @@
 }
 
 .kutije {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   margin-top: 180px;
+  margin: auto 200px;
+  grid-gap: 20px;
+}
+
+@media (max-width: 1300px) {
+  .kutije {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .kutije {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .box {
   border: 1px solid white;
-  width: 300px;
-  height: 300px;
-  margin: 20px;
+  width: 100%;
+  height: 15rem;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
-  animation-iteration-count: infinite;
-  transition: transform 1s;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 6rem;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
+@media (max-width: 1300px) {
+  .box {
+    width: 75%;
+  }
+}
+
+@media (max-width: 900px) {
+  .box {
+    width: 65%;
+  }
+}
+
+@media (max-width: 650px) {
+  .box {
+    width: 75%;
+    margin-bottom: -2rem;
+  }
 }
 
 .slika {
-  width: 200px;
-  height: 200px;
-  border: 5px solid #0ebbd0;
-  border-radius: 100px;
-  margin-top: -300px;
-  object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0ebbd0;
+  margin: 0 auto;
+  margin-top: -8rem;
+  max-width: 200px;
 }
-body {
-  margin: 0%;
+
+@media (max-width: 1300px) {
+  .slika {
+    max-width: 150px;
+  }
 }
+
+@media (max-width: 900px) {
+  .slika {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 650px) {
+  .slika {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slika {
+    max-width: 70px;
+  }
+}
+
 .box:hover {
-  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
-* {
-  box-sizing: border-box;
-}
+/*# sourceMappingURL=Drugi.css.map */

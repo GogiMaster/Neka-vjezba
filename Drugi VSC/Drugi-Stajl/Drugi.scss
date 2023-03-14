@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .sivi {
   background-color: rgb(230, 224, 217);
   border: 1px solid rgb(230, 224, 217);
@@ -9,6 +12,9 @@
   font-size: 80px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
+  @media (max-width: 700px) {
+    font-size: 50px;
+  }
 }
 .plavi {
   background-color: #0ebbd0;
@@ -33,31 +39,68 @@
   color: antiquewhite;
 }
 .kutije {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 180px;
-  position: relative;
+  margin: auto 200px;
+  grid-gap: 20px;
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .box {
   border: 1px solid white;
-  width: 300px;
-  height: 300px;
-  margin: 10px;
+  width: 100%;
+  height: 15rem;
   background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 6rem;
+  @media (max-width: 1300px) {
+    width: 75%;
+  }
+  @media (max-width: 900px) {
+    width: 65%;
+  }
+  @media (max-width: 650px) {
+    width: 75%;
+
+    margin-bottom: -2rem;
+  }
+  transition: transform 250ms;
 }
 .slika {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  border: 5px solid #0ebbd0;
-  border-radius: 100px;
-  top: -90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0ebbd0;
+  margin: 0 auto;
+  margin-top: -8rem;
+  max-width: 200px;
+  @media (max-width: 1300px) {
+    max-width: 150px;
+  }
+  @media (max-width: 900px) {
+    max-width: 120px;
+  }
+  @media (max-width: 650px) {
+    max-width: 100px;
+  }
+  @media (max-width: 600px) {
+    max-width: 70px;
+  }
+}
+.box:hover {
+  transform: translateY(-50px);
 }
