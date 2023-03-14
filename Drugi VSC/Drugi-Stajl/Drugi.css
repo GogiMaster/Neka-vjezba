@@ -48,7 +48,7 @@
   border: 1px solid white;
   width: 300px;
   height: 300px;
-  margin: 10px;
+  margin: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -57,6 +57,8 @@
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
+  animation-iteration-count: infinite;
+  transition: transform 1s;
 }
 
 .slika {
@@ -65,7 +67,14 @@
   border: 5px solid #0ebbd0;
   border-radius: 100px;
   margin-top: -300px;
+  object-fit: fill;
 }
 body {
   margin: 0%;
+}
+.box:hover {
+  transform: translateY(-50px);
+}
+* {
+  box-sizing: border-box;
 }
